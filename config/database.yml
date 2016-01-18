@@ -1,0 +1,27 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 60
+  username: root
+  password: root
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  <<: *default
+  database: tale_crawler_development
+  pool: 60
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+
+test: &test
+  <<: *default
+  database: db/tale_crawler_test.mysql2tale
+
+production:
+  adapter: postgresql
+  url: <%= ENV['DATABASE_URL'] %>
+
+cucumber:
+  <<: *test
