@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tale_id: 
+  chapter: 1
+  content: MyText
+  link_chapter: MyString
+
+two:
+  tale_id: 
+  chapter: 1
+  content: MyText
+  link_chapter: MyString

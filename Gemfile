@@ -12,7 +12,7 @@ gem "sdoc", "~> 0.4.0", group: :doc
 gem "mechanize"
 gem "bootstrap-sass"
 gem "sidekiq"
-gem "rails_config"
+gem "config"
 gem "mojinizer"
 
 group :development, :test do
