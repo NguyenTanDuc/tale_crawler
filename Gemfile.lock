@@ -89,9 +89,12 @@ GEM
       moji (~> 1.6)
     multi_json (1.11.2)
     mysql2 (0.3.18)
+    mysql2 (0.3.18-x86-mingw32)
     net-http-digest_auth (1.4)
     net-http-persistent (2.9.4)
     nokogiri (1.6.7.1)
+      mini_portile2 (~> 2.0.0.rc2)
+    nokogiri (1.6.7.1-x86-mingw32)
       mini_portile2 (~> 2.0.0.rc2)
     ntlm-http (0.1.1)
     polyglot (0.3.5)
@@ -159,12 +162,15 @@ GEM
       coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2015.7)
+      tzinfo (>= 1.0.0)
     uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.1)
+    unf_ext (0.0.7.1-x86-mingw32)
     web-console (2.2.1)
       activemodel (>= 4.0)
       binding_of_caller (>= 0.7.2)
@@ -174,6 +180,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   bootstrap-sass
@@ -191,8 +198,6 @@ DEPENDENCIES
   sidekiq
   spring
   turbolinks
+  tzinfo-data
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
-
-BUNDLED WITH
-   1.10.6

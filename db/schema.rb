@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160119020956) do
+ActiveRecord::Schema.define(version: 20160122155325) do
+
+  create_table "authors", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "categories", force: true do |t|
     t.string   "name"
@@ -22,7 +28,8 @@ ActiveRecord::Schema.define(version: 20160119020956) do
   create_table "chapters", force: true do |t|
     t.integer  "tale_id"
     t.integer  "chapter"
-    t.text     "content"
+    t.text     "content_text"
+    t.text     "content_html"
     t.string   "link"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -30,19 +37,27 @@ ActiveRecord::Schema.define(version: 20160119020956) do
 
   add_index "chapters", ["tale_id"], name: "index_chapters_on_tale_id", using: :btree
 
+  create_table "tale_links", force: true do |t|
+    t.string   "tale_link"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "tales", force: true do |t|
     t.string   "name"
-    t.string   "author"
+    t.integer  "author_id"
     t.integer  "category_id"
     t.string   "source"
     t.string   "link"
     t.boolean  "status"
     t.integer  "chapter_number"
     t.integer  "last_chapter"
+    t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "tales", ["author_id"], name: "index_tales_on_author_id", using: :btree
   add_index "tales", ["category_id"], name: "index_tales_on_category_id", using: :btree
 
 end
