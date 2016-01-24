@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160122155325) do
+ActiveRecord::Schema.define(version: 20160123164306) do
 
   create_table "authors", force: true do |t|
     t.string   "name"
@@ -27,9 +27,10 @@ ActiveRecord::Schema.define(version: 20160122155325) do
 
   create_table "chapters", force: true do |t|
     t.integer  "tale_id"
+    t.string   "title"
     t.integer  "chapter"
-    t.text     "content_text"
-    t.text     "content_html"
+    t.text     "content_text", limit: 16777215
+    t.text     "content_html", limit: 16777215
     t.string   "link"
     t.datetime "created_at"
     t.datetime "updated_at"

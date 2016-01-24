@@ -3,8 +3,8 @@ class CreateChapters < ActiveRecord::Migration
     create_table :chapters do |t|
       t.references :tale, index: true
       t.integer :chapter
-      t.text :content_text
-      t.text :content_html
+      t.text :content_text, limit: 16777215
+      t.text :content_html, limit: 16777215
       t.string :link
 
       t.timestamps
