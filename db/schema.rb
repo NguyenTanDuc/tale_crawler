@@ -31,7 +31,8 @@ ActiveRecord::Schema.define(version: 20160123164306) do
     t.integer  "chapter"
     t.text     "content_text", limit: 16777215
     t.text     "content_html", limit: 16777215
-    t.string   "link"
+    t.string   "link",         limit: 1024
+    t.integer  "display_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

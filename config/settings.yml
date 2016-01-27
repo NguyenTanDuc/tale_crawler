@@ -2,3 +2,6 @@ url:
   base_url: "http://truyen2.hixx.info"
 worker:
   number: 40
+logger:
+  file_name_error: "crawlerlog.txt"
+  file_name_worker: "workerlog.txt"

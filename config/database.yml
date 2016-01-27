@@ -1,7 +1,7 @@
 default: &default
   adapter: mysql2
   encoding: utf8mb4
-  pool: 60
+  pool: 512
   username: root
   password: root
   socket: /var/run/mysqld/mysqld.sock
@@ -9,7 +9,6 @@ default: &default
 development:
   <<: *default
   database: tale_crawler_development
-  pool: 60
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

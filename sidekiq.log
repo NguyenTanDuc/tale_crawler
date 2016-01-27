@@ -1,0 +1,31 @@
+# Logfile created on 2016-01-28 00:25:22 +0700 by logger.rb/44203
+2016-01-27T17:25:32.329Z 344 TID-bcxy0 INFO: Running in ruby 2.1.5p273 (2014-11-13 revision 48405) [i386-mingw32]
+2016-01-27T17:25:32.329Z 344 TID-bcxy0 INFO: See LICENSE and the LGPL-3.0 for licensing details.
+2016-01-27T17:25:32.329Z 344 TID-bcxy0 INFO: Upgrade to Sidekiq Pro for more features and support: http://sidekiq.org
+2016-01-27T17:25:32.329Z 344 TID-bcxy0 INFO: Booting Sidekiq 4.0.2 with redis options {:url=>nil}
+2016-01-27T17:25:32.329Z 344 TID-bcxy0 INFO: Starting processing, hit Ctrl-C to stop
+2016-01-27T17:26:21.620Z 344 TID-v5570 TaleCrawlerWorker JID-42cc3dac5588ca3ba413d32d INFO: start
+2016-01-27T17:26:21.620Z 344 TID-v578c TaleCrawlerWorker JID-ee5eddb01be70d20579db470 INFO: start
+2016-01-27T17:26:21.620Z 344 TID-v570c TaleCrawlerWorker JID-c5afdd81aea7b7e3a4a750b7 INFO: start
+2016-01-27T17:26:21.620Z 344 TID-v54z0 TaleCrawlerWorker JID-81343b1a815d2f2821985fe9 INFO: start
+2016-01-27T17:26:21.620Z 344 TID-v57cc TaleCrawlerWorker JID-dfced9978fe3be203d904a05 INFO: start
+2016-01-27T17:26:21.620Z 344 TID-v57ko TaleCrawlerWorker JID-b3cc14ca970395437bf50d11 INFO: start
+2016-01-27T17:26:21.620Z 344 TID-v56kc TaleCrawlerWorker JID-1cbf3f50a0d79d3dacbe9600 INFO: start
+2016-01-27T17:26:21.636Z 344 TID-v55sc TaleCrawlerWorker JID-6c2ea2aefdad6e9f7e906003 INFO: start
+2016-01-27T17:26:21.636Z 344 TID-v56wc TaleCrawlerWorker JID-4c009c258189d65c3c5ab0a7 INFO: start
+2016-01-27T17:26:21.636Z 344 TID-v56gc TaleCrawlerWorker JID-abae6b5a87418a21d82b5a3e INFO: start
+2016-01-27T17:26:21.636Z 344 TID-v55k0 TaleCrawlerWorker JID-369a43fdf5725dcaf563af5e INFO: start
+2016-01-27T17:26:21.636Z 344 TID-v56oc TaleCrawlerWorker JID-3e01d5cefe00841830c6c199 INFO: start
+2016-01-27T17:26:21.636Z 344 TID-v568c TaleCrawlerWorker JID-f3ae8e90860adade7ea1e87a INFO: start
+2016-01-27T17:26:21.636Z 344 TID-v5530 TaleCrawlerWorker JID-8b865682f5e75943051b9137 INFO: start
+2016-01-27T17:26:21.636Z 344 TID-v55wc TaleCrawlerWorker JID-6e8ecbc5f16a5e6cf5f23bb3 INFO: start
+2016-01-27T17:26:21.636Z 344 TID-v55f0 TaleCrawlerWorker JID-45288828ff5077ac4023b959 INFO: start
+2016-01-27T17:26:21.636Z 344 TID-v56sc TaleCrawlerWorker JID-c9b7c1931514eedab0610dd3 INFO: start
+2016-01-27T17:26:21.636Z 344 TID-v55b0 TaleCrawlerWorker JID-7f04027d9c7e278fada983c4 INFO: start
+2016-01-27T17:26:21.636Z 344 TID-v54v0 TaleCrawlerWorker JID-f382e211d4225270ceabc5a2 INFO: start
+2016-01-27T17:26:21.636Z 344 TID-v56cc TaleCrawlerWorker JID-28a62798ee68b57ad4db8792 INFO: start
+2016-01-27T17:26:21.636Z 344 TID-v560c TaleCrawlerWorker JID-f74fe5e97784340ba12e025f INFO: start
+2016-01-27T17:26:21.636Z 344 TID-v57go TaleCrawlerWorker JID-479b6f0ec47233694a44c10c INFO: start
+2016-01-27T17:26:21.636Z 344 TID-v564c TaleCrawlerWorker JID-573fe3b28f6821fa4fdf4581 INFO: start
+2016-01-27T17:26:21.636Z 344 TID-v55o0 TaleCrawlerWorker JID-738c656edef4486509c6816d INFO: start
+2016-01-27T17:26:21.636Z 344 TID-v574c TaleCrawlerWorker JID-727c4f8dc38fd37a38563ab0 INFO: start

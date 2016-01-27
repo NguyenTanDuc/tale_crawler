@@ -6,7 +6,7 @@ class Chapter < ActiveRecord::Base
   def chapter_uniqueness
     content_text_first_line = content_text.try(:slice, 0..50)
     if chapter.present? && title.present?
-      chapter_in_db = Chapter.find_by(chapter: chapter, title: title, tale_id: tale.id)
+      chapter_in_db = Chapter.find_by(tale_id: tale.id, chapter: chapter, title: title)
       if chapter_in_db.blank?
         return true
       else
@@ -14,17 +14,12 @@ class Chapter < ActiveRecord::Base
       end
     else
       chapters_in_db = Chapter.where(tale_id: tale.id)
-      flag = true
-      chapters_in_db.each do |chapter_in_db|
-        if chapter_in_db.content_text.try(:slice, 0..100).include?(content_text_first_line)
-          flag = false
-          break
-        end
-      end
-      if flag == false
-        errors.add(:chapter, "chapter already crawled")
-      else
+      if chapters_in_db.last.try(:content_text).nil?
         return true
+      else
+        if chapters_in_db.last.content_text.slice(0..100).include?(content_text_first_line)
+          errors.add(:chapter, "chapter already crawled")
+        end
       end
     end
   end

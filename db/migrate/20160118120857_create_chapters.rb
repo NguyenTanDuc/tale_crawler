@@ -5,7 +5,8 @@ class CreateChapters < ActiveRecord::Migration
       t.integer :chapter
       t.text :content_text, limit: 16777215
       t.text :content_html, limit: 16777215
-      t.string :link
+      t.string :link, limit: 1024
+      t.integer :display_type
 
       t.timestamps
     end
